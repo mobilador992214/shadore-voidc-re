@@ -1,4 +1,6 @@
-name: Build Shadore Voidcore APK
+- name: Build debug APK
+  working-directory: shadore-voidc-re
+  run: gradle --no-daemon assembleDebug
 
 on:
   workflow_dispatch:
