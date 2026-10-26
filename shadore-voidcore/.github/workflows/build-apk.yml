@@ -48,17 +48,4 @@ jobs:
           path: app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 7
-          repository/
-├── .github/
-│   └── workflows/
-│       └── build-apk.yml
-├── app/
-│   ├── build.gradle
-│   └── src/
-│       └── main/
-│           ├── AndroidManifest.xml
-│           ├── java/
-│           └── res/
-├── build.gradle
-├── settings.gradle
-└── gradle.properties
+          
