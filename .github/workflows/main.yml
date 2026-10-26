@@ -1,11 +1,13 @@
-name: Build shadore voidcore APK
-
-on:
+- name: Build debug APK
+  working-directory: ./shadore
+  run: gradle assembleDebug
+  
+  on:
   workflow_dispatch:
   push:
     branches: [ "main", "master" ]
 
-jobs:
+ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
